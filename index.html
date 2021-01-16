@@ -58,9 +58,9 @@
       <p>One of my favorite animes I’ve watched, <i>NANA</i>, includes a quote from the protagonist Nana Osaki where she says<br>
          <pre><em>Don’t just give up. Life is about getting knocked down over and over, but still getting up each time. If you keep getting up, you win.</em></pre>
       </p>
-      <p>This quote helps remind me that failures are a part of every process in life, and that it shouldn’t 
-        discourage me but instead keep me motivated to reach my end goal.
-      </p>
+      <aside>This quote helps remind me that <strong>failures</strong> are a part of every process in life, and that it shouldn’t 
+        discourage me but instead keep me <strong>motivated</strong> to reach my end goal.
+      </aside>
       
       <p>I've also watched a lot of other animes and below you can see a table containing animes I would recommend and my rating of them.</p>
       <table>
@@ -93,6 +93,23 @@
           <td>10</td>
         </tr>
       </table>
+      <p>Here's the opening for Darling in the Franxx</p>
+      <video width="320" height="240" controls>
+        <source src="ani-vid.mp4" type="video/mp4">
+      </video>
+      <p>And here's the trailer for it</p>
+      <iframe width="320" height="240"
+      src="https://www.youtube.com/watch?v=xiNeXCUosSg">
+      </iframe>
+      <p>what did you think about it?</p>
+      <label for="opinion">Select how you felt:</label>
+      <select name="opinion" id="opinion">
+        <optgroup label ="Feelings">
+          <option value="amazing">It was amazing and spectacular</option>
+          <option value="meh">It was alright</option>
+          <option value="no">Didn't like it at all</option>
+        </optgroup>
+      </select>
     </section>
     <hr>
     <section>
@@ -101,19 +118,37 @@
         the form below!
       </p>
       <form>
-        <label for="show">Whats your favorite show?</label><br>
-        <input type="text" id="show" name="show"><br>
-        <label for="rating">What would you rate it?</label><br>
-        <input type="number" id="rating" name="rating"><br>
-        <input type="submit">
-        <input type="reset">
+        <fieldset>
+          <legend>Your favorite show:</legend>
+          <label for="show">Whats your favorite show name?</label><br>
+          <input type="text" id="show" name="show"><br>
+          <label for="rating">What would you rate it?</label><br>
+          <input type="number" id="rating" name="rating"><br>
+          <label for="thoughts">What did you like about it?</label>
+          <textarea id="thoughts" name="thoughts" rows="4" cols="50"></textarea>
+          <input type="submit">
+          <input type="reset">
+        </fieldset>
       </form>
 
-      
+      <p></p>
     </section>
   </main>
+  <hr>
   <footer>
-    Thanks for checking out my page :D
+    <p>Thanks for checking out my page :D</p>
+    <canvas id="example" width="50" height="50" style="border:1px solid #000000;"></canvas>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="20%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(0, 238, 255);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(0, 26, 255);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <rect cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Bryan</text>
+    </svg>
+    <canvas id="example" width="50" height="50" style="border:1px solid #000000;"></canvas>
   </footer>
 </body>
 </html>
