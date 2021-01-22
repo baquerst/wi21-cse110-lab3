@@ -1,0 +1,38 @@
+body {
+    background-color: azure; /* setting background to azure */
+}
+
+/* customizing sections */
+section {
+    width: 60vw;
+    padding: 5px 5px 5px 5px;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 0%;
+    margin: 5px 5px 5px 5px;
+}
+
+/*cutsomizing header */
+.header {
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    margin: auto;
+}
+
+/* setting height and width of picture */
+#picture {
+    height: 10vh;
+    width: auto;
+}
+
+/*box model for p in body */
+body p {
+    padding: 0%;
+    margin-top: 1ch;
+    margin-left: 1ch;
+    margin-bottom: 1ch;
+    margin-right: 1ch;
+}
