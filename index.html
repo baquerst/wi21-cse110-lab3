@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello welcome to Bryan's page</title>
+    <title class="title">Hello welcome to Bryan's page</title>
     <meta name="author" content="Bryan Lee">
     <link rel="stylesheet" href="mystyle.css">
   </head>
@@ -14,8 +14,8 @@
   </header>
   <main>
     <section>
-      <h1>About me</h1>
-      <figure>
+      <h1 class="header">About me</h1>
+      <figure id="picture">
         <picture>
           <source srcset="https://i.imgur.com/M6esttN.jpg"
               media="(min-width: 800px)">
@@ -47,7 +47,7 @@
     </div>
     <hr>
     <section>
-      <h2>Personal Life</h2>
+      <h2 class="header">Personal Life</h2>
       <p>When I’m not studying or putting time into coding, I like to play video games and watch anime.</p>
       <p>Some games I enjoy playing include: </p>
       <ul>
@@ -118,11 +118,11 @@
     </section>
     <hr>
     <section>
-      <h1>How about you?</h1>
+      <h1 class="header">How about you?</h1>
       <p>I'd love to hear about some of your favorite things so feel free to enter them into
         the form below!
       </p>
-      <form>
+      <form id="shows">
         <fieldset>
           <legend>Your favorite show:</legend>
           <label for="show">What's your favorite show name?</label><br>
@@ -137,7 +137,7 @@
       </form>
 
       <p>Whats some more information about you?</p>
-      <form>
+      <form id="personal">
         <fieldset>
           <label for="name">What's your name?</label><br>
           <input type="text" id="name" name="name"><br>
@@ -155,7 +155,7 @@
         </fieldset>
       </form>
       <p>Now I'd like to hear your thoughts on my site!</p>
-      <form>
+      <form id="feedback">
         <label for="feedback">Choose how you felt:</label>
         <input list="feedback-option" name="feedback" id="feedback">
         <datalist id="feedback-option">
