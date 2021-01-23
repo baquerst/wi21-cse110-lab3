@@ -27,7 +27,7 @@ section {
 #picture {
     padding: 5px;
     margin: 5px;
-    height: 10vh;
+    height: 5px;
     width: auto;
 }
 
@@ -35,7 +35,7 @@ section {
 body p {
     padding: 0%;
     margin-top: 1ch;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-bottom: 1ch;
     margin-right: 1ch;
 }
@@ -47,11 +47,27 @@ div, p {
 form + p {
     padding: 0%;
     margin-top: 1ch;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-bottom: 1ch;
     margin-right: 1ch;
 }
 
 p.synopsis {
     text-decoration: underline;
+}
+
+ul > section {
+    padding: 0%;
+    margin-top: 1ch;
+    margin-left: 5vw;
+    margin-bottom: 1ch;
+    margin-right: 1ch;
+}
+
+p ~ ol {
+    padding: 0%;
+    margin-top: 1ch;
+    margin-left: 5vw;
+    margin-bottom: 1ch;
+    margin-right: 1ch;
 }
