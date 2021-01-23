@@ -2,6 +2,41 @@ body {
     background-color: azure; /* setting background to azure */
 }
 
+header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #3CA;
+    grid-area: header;
+}
+
+#navigation {
+    text-align: right;
+    position: relative;
+    right: 5vw;
+}
+
+a:link {
+    color: hsl(220, 100%, 45%);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: hsla(290,60%,70%,0.3);
+}
+
+a:active {
+    color: gray;
+}
+
+button[type] {
+    background-color: springgreen;
+}
+
 /* customizing sections */
 section {
     width: 60vw;
@@ -20,14 +55,14 @@ section {
     padding-bottom: 0%;
     padding-right: 0%;
     margin: auto;
-    color: grey;
+    color: rgb(126, 126, 126, 0.9);
 }
 
 /* setting height and width of picture */
 #picture {
     padding: 5px;
     margin: 5px;
-    height: 5px;
+    height: auto;
     width: auto;
 }
 
@@ -42,6 +77,7 @@ body p {
 
 div, p {
     text-align: left;
+    display: inline-block;
 }
 
 form + p {
@@ -57,6 +93,7 @@ p.synopsis {
 }
 
 ul > section {
+    display: block;
     padding: 0%;
     margin-top: 1ch;
     margin-left: 5vw;
@@ -65,9 +102,47 @@ ul > section {
 }
 
 p ~ ol {
+    display: block;
     padding: 0%;
     margin-top: 1ch;
     margin-left: 5vw;
     margin-bottom: 1ch;
     margin-right: 1ch;
+}
+
+table {
+    width: 300px;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: rgb(226, 197, 176);
+    }
 }
