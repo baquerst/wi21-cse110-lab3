@@ -12,10 +12,10 @@
       }
     </style>
   </head>
-<body>
+<body class="grid-container">
   <header>
     <p>Hi I'm Bryan :)</p>
-    <nav>
+    <nav id="navigation">
       <a href="/">Home</a>
     </nav>
   </header>
@@ -100,19 +100,27 @@
           <td>10</td>
         </tr>
       </table>
-      <p>Here's the opening for Darling in the Franxx</p>
-      <video width="320" height="240" controls>
-        <source src="ani-vid.mp4" type="video/mp4">
-      </video>
-      <details>
-        <summary>Synopsis of Darling in the Franxx</summary>
-        <p class="synopsis">Darling in the Franxx takes place in a dystopian post-apocalyptic future where the remnants of human civilization have abandoned the surface. Adults and children exist in contrasting environments from each other. Adults live in technologically-advanced cities within Plantations and are immortal, but procreation and relationships among them have become obsolete and undesirable. Artificially-created children, termed "parasites", are deprived of individuality and are educated only for piloting Franxx in pairs to defend humanity. The children are kept in isolation from adult society in environments nicknamed "birdcages", which emulate that of a bygone era, so that they can develop the emotional responses required to pilot Franxx.
-          In the early 21st century, the progress of human civilization was accelerated by ground-breaking discoveries in mining technology, allowing extraction of magma energy for a new low-cost, all-encompassing energy source. Scientists contributing to the breakthrough form "APE", an organization that would gain a large influence on world politics and the global economy as a result of their discoveries. After discovering human immortality, much of mankind opted to become immortal despite the side effect of losing their reproductive functions. A cult of personality surrounds Papa, the chairman of the APE which all humans come to worship akin to a god. Now governing the remnants of civilization, APE leads humanity to abandon Earth's now desolate surface for the relative safety of mobile fortress-cities known as Plantations.</p>
-      </details>
-      <p>And here's the trailer for it</p>
-      <iframe width="320" height="240"
-      src="https://www.youtube.com/watch?v=xiNeXCUosSg">
-      </iframe>
+      <div class="flex-container">
+        <div>
+          <p>Here's the opening for Darling in the Franxx</p>
+          <video width="320" height="240" controls>
+            <source src="ani-vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <details>
+            <summary>Synopsis of Darling in the Franxx</summary>
+            <p class="synopsis">Darling in the Franxx takes place in a dystopian post-apocalyptic future where the remnants of human civilization have abandoned the surface. Adults and children exist in contrasting environments from each other. Adults live in technologically-advanced cities within Plantations and are immortal, but procreation and relationships among them have become obsolete and undesirable. Artificially-created children, termed "parasites", are deprived of individuality and are educated only for piloting Franxx in pairs to defend humanity. The children are kept in isolation from adult society in environments nicknamed "birdcages", which emulate that of a bygone era, so that they can develop the emotional responses required to pilot Franxx.
+              In the early 21st century, the progress of human civilization was accelerated by ground-breaking discoveries in mining technology, allowing extraction of magma energy for a new low-cost, all-encompassing energy source. Scientists contributing to the breakthrough form "APE", an organization that would gain a large influence on world politics and the global economy as a result of their discoveries. After discovering human immortality, much of mankind opted to become immortal despite the side effect of losing their reproductive functions. A cult of personality surrounds Papa, the chairman of the APE which all humans come to worship akin to a god. Now governing the remnants of civilization, APE leads humanity to abandon Earth's now desolate surface for the relative safety of mobile fortress-cities known as Plantations.</p>
+          </details>
+        </div>
+        <div>
+          <p>And here's the trailer for it</p>
+          <iframe width="320" height="240"
+          src="https://www.youtube.com/watch?v=xiNeXCUosSg">
+          </iframe>
+        </div>
+      </div>
       <p>What did you think about the trailer?</p>
       <label for="opinion">Select how you felt:</label>
       <select name="opinion" id="opinion">
